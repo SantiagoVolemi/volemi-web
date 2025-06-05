@@ -12,13 +12,13 @@ const partners: Partner[] = [
   {
     id: 1,
     name: "Queen's University Belfast",
-    logo: "/images/partners/queens-university-belfast.svg",
+    logo: "/images/logos/queens-university-belfast.svg",
     website: "https://www.qub.ac.uk/"
   },
   {
     id: 2,
     name: "Cardiff University",
-    logo: "/images/partners/cardiff-university.svg",
+    logo: "/images/logos/cardiff-university.svg",
     website: "https://www.cardiff.ac.uk/"
   },
   {
