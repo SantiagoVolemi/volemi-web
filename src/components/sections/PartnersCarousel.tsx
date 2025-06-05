@@ -13,49 +13,49 @@ const partners: Partner[] = [
     id: 1,
     name: "Queen's University Belfast",
     logo: "/images/logos/queens-university-belfast.svg",
-    website: "https://www.qub.ac.uk/"
+    website: "https://www.qub.ac.uk"
   },
   {
     id: 2,
     name: "Cardiff University",
     logo: "/images/logos/cardiff-university.svg",
-    website: "https://www.cardiff.ac.uk/"
+    website: "https://www.cardiff.ac.uk"
   },
   {
     id: 3,
     name: "Northumbria University London",
-    logo: "https://via.placeholder.com/200x80/f0f0f0/666666?text=Imperial",
-    website: "https://www.imperial.ac.uk"
+    logo: "/images/logos/northumbria-university-logo.svg",
+    website: "https://london.northumbria.ac.uk"
   },
   {
     id: 4,
     name: "University of East Anglia",
-    logo: "https://via.placeholder.com/200x80/f0f0f0/666666?text=King's",
-    website: "https://www.kcl.ac.uk"
+    logo: "/images/logos/university-of-east-anglia-logo.svg",
+    website: "https://www.uea.ac.uk"
   },
   {
     id: 5,
     name: "University of Hull",
-    logo: "https://via.placeholder.com/200x80/f0f0f0/666666?text=Edinburgh",
-    website: "https://www.ed.ac.uk"
+    logo: "/images/logos/university-of-hull-logo.svg",
+    website: "hhttps://www.hull.ac.uk"
   },
   {
     id: 6,
     name: "De Montfort University",
-    logo: "https://via.placeholder.com/200x80/f0f0f0/666666?text=Manchester",
-    website: "https://www.manchester.ac.uk"
+    logo: "/images/logos/de-montfort-university-logo.svg",
+    website: "https://www.dmu.ac.uk/"
   },
   {
     id: 7,
     name: "University of Central Lancashire",
-    logo: "https://via.placeholder.com/200x80/f0f0f0/666666?text=Warwick",
-    website: "https://warwick.ac.uk"
+    logo: "/images/logos/UCLAN-logo.svg",
+    website: "https://www.lancashire.ac.uk"
   },
   {
     id: 8,
     name: "Hult Business School",
-    logo: "https://via.placeholder.com/200x80/f0f0f0/666666?text=Bristol",
-    website: "https://www.bristol.ac.uk"
+    logo: "/images/logos/hult-logo-black.svg",
+    website: "https://www.hult.edu"
   }
 ];
 
