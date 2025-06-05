@@ -44,7 +44,7 @@ const slides: Slide[] = [
     subtitle: "Octubre 2025",
     description: "Conoce universidades del Reino Unido en tu ciudad. Estaremos en Monterrey, CDMX, Bogotá, Medellín, Lima y Arequipa. Una oportunidad única para planear tu futuro académico.",
     buttonText: "Reserva tu lugar",
-    image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=600&h=400&fit=crop&crop=center",
+    image: "/images/volemi/qub-evento-bogota-2024.png",
     theme: 'green'
   }
 ];
