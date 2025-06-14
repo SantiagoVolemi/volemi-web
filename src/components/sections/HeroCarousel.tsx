@@ -6,7 +6,7 @@ interface Slide {
   subtitle: string;
   description: string;
   buttonText: string;
-  buttonlink: string;
+  buttonLink: string;
   image: string;
 theme: 'purple' | 'blue' | 'salmon' | 'green';
 }
@@ -18,7 +18,7 @@ const slides: Slide[] = [
     subtitle: "Volemi - Tu guía al mundo",
     description: "Somos los chéveres, los amables. Con nuestro conocimiento y entrega, diseñamos de principio a fin esa experiencia mágica que todos quienes estudian en el exterior desean vivir.",
     buttonText: "Descubre más",
-    buttonlink: "https://calendly.com/volemi",
+    buttonLink: "https://calendly.com/volemi",
     image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=400&fit=crop&crop=center",
     theme: 'purple'
   },
@@ -28,7 +28,7 @@ const slides: Slide[] = [
     subtitle: "Conectamos con las mejores instituciones",
     description: "Nuestras alianzas corporativas te abren puertas a oportunidades únicas. Trabajamos con universidades de prestigio mundial para ofrecerte programas excepcionales.",
     buttonText: "Ver alianzas",
-    buttonlink: "https://calendly.com/volemi",
+    buttonLink: "https://calendly.com/volemi",
     image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&h=400&fit=crop&crop=center",
     theme: 'blue'
   },
@@ -38,7 +38,7 @@ const slides: Slide[] = [
     subtitle: "Webinars exclusivos",
     description: "Participa en nuestros webinars gratuitos y descubre todo lo que necesitas saber sobre estudiar en el Reino Unido. Experiencias reales, consejos prácticos.",
     buttonText: "Regístrate ahora",
-    buttonlink: "https://my.demio.com/ref/XdbzY77H5I2a4PJJ",
+    buttonLink: "https://my.demio.com/ref/XdbzY77H5I2a4PJJ",
     image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop&crop=center",
     theme: 'salmon'
   },
@@ -48,7 +48,7 @@ const slides: Slide[] = [
     subtitle: "Octubre 2025",
     description: "Conoce universidades del Reino Unido en tu ciudad. Estaremos en Monterrey, CDMX, Bogotá, Medellín, Lima y Arequipa. Una oportunidad única para planear tu futuro académico.",
     buttonText: "Reserva tu lugar",
-    buttonlink: "https://calendly.com/volemi",
+    buttonLink: "https://calendly.com/volemi",
     image: "/images/volemi/qub-evento-bogota-2024.png",
     theme: 'green'
   }
@@ -340,19 +340,25 @@ case 'salmon':
             {slides[currentSlide].description}
           </p>
           
-          <button 
-            style={buttonStyle}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = 'scale(1.05)';
-              e.currentTarget.style.boxShadow = '0 10px 15px -3px rgba(0, 0, 0, 0.2)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = 'scale(1)';
-              e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
-            }}
-          >
-            {slides[currentSlide].buttonText}
-          </button>
+<a 
+  href={slides[currentSlide].buttonLink}
+  target={slides[currentSlide].buttonLink.startsWith('http') ? '_blank' : '_self'}
+  style={{ textDecoration: 'none' }}
+>
+  <button 
+    style={buttonStyle}
+    onMouseEnter={(e) => {
+      e.currentTarget.style.transform = 'scale(1.05)';
+      e.currentTarget.style.boxShadow = '0 10px 15px -3px rgba(0, 0, 0, 0.2)';
+    }}
+    onMouseLeave={(e) => {
+      e.currentTarget.style.transform = 'scale(1)';
+      e.currentTarget.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+    }}
+  >
+    {slides[currentSlide].buttonText}
+  </button>
+</a>
 
           {/* Indicadores de slide */}
           <div style={indicatorsStyle}>
